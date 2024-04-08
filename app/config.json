@@ -1,11 +1,9 @@
 {
-  "name": "Hamish Williams",
+  "name": "Wanling Ma",
   "role": "Designer",
-  "disciplines": ["Developer", "Prototyper", "Animator", "Illustrator", "Modder"],
+  "disciplines": ["Developer", "Prototyper","Illustrator"],
   "url": "https://hamishw.com",
-  "twitter": "@hamishMW",
-  "figma": "@Hamish",
-  "github": "HamishMW",
+  "github": "WanlingMa",
   "repo": "https://github.com/HamishMW/portfolio",
   "ascii": "__  __  __\n\u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215\n"
 }

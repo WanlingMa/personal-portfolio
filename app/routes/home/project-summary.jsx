@@ -13,6 +13,7 @@ import { cssProps, media } from '~/utils/style';
 import { useHydrated } from '~/hooks/useHydrated';
 import katakana from './katakana.svg';
 import styles from './project-summary.module.css';
+import { Image } from '~/components/image';
 
 const Model = lazy(() =>
   import('~/components/model').then(module => ({ default: module.Model }))
@@ -103,7 +104,7 @@ export function ProjectSummary({
       <div className={styles.preview}>
         {model.type === 'laptop' && (
           <>
-            {renderKatakana('laptop', visible)}
+            {/* {renderKatakana('laptop', visible)} */}
             <div className={styles.model} data-device="laptop">
               {!modelLoaded && (
                 <Loader center className={styles.loader} data-visible={visible} />
@@ -133,7 +134,7 @@ export function ProjectSummary({
         )}
         {model.type === 'phone' && (
           <>
-            {renderKatakana('phone', visible)}
+            {/* {renderKatakana('phone', visible)} */}
             <div className={styles.model} data-device="phone">
               {!modelLoaded && (
                 <Loader center className={styles.loader} data-visible={visible} />
@@ -169,6 +170,9 @@ export function ProjectSummary({
               )}
             </div>
           </>
+        )}
+        {typeof(model) === 'string' && (
+          <Image role="presentation" src={model} placeholder={model} alt="" />
         )}
       </div>
     );

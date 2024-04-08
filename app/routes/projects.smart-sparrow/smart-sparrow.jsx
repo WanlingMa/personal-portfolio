@@ -70,14 +70,14 @@ const EarthSection = lazy(() =>
   import('./earth').then(module => ({ default: module.EarthSection }))
 );
 
-const title = 'Designing the future of education';
+const title = 'Wayfound: Indoor Directions for the Bissell Building';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  "As a lead designer in our team, I focused on understanding user needs through creating proto-personas, personas, and Empathy Maps, alongside developing 'As-is' scenarios and needs-statements. I crafted interview and survey questions to pinpoint user pain points, collected crucial data, and led the ideation process to prioritize solutions, ensuring a user-centered approach in evolving our product.";
 const roles = [
   'Art Direction',
   'UX and UI Design',
   'Front End Development',
-  'Motion Design',
+  'High Fidelity Prototype',
 ];
 
 export const meta = () => {
@@ -105,8 +105,9 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
+          url="https://www.canva.com/design/DAF2hGx1890/gPd7J9v6FC5dTWjkgq47qw/edit?utm_content=DAF2hGx1890&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
           roles={roles}
+          linkLabel="Clickable Prototype"
         />
         <ProjectSection padding="top">
           <ProjectSectionContent>
@@ -131,7 +132,7 @@ export const SmartSparrow = () => {
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection>
-          <ProjectTextRow>
+          <ProjectTextRow width="l">
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
               In 2017, Smart Sparrow began a project to build an entirely new platform to
@@ -217,7 +218,7 @@ export const SmartSparrow = () => {
         </ProjectSection>
         <ThemeProvider theme="dark" data-invert>
           <ProjectSection
-            backgroundOverlayOpacity={0.5}
+            backgroundOverlayOpacity={0}
             backgroundElement={
               <Image
                 srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
@@ -254,9 +255,9 @@ export const SmartSparrow = () => {
             </ProjectSectionColumns>
           </ProjectSection>
         </ThemeProvider>
-        <ProjectSection>
+        <ProjectSection width="full">
           <ProjectSectionContent>
-            <ProjectTextRow>
+            <ProjectTextRow width="l">
               <ProjectSectionHeading>Encouraging adaptivity</ProjectSectionHeading>
               <ProjectSectionText>
                 A major part of solving for collaboration was being able to visualize the
@@ -266,24 +267,7 @@ export const SmartSparrow = () => {
                 adaptivity scenarios screen by screen.
               </ProjectSectionText>
             </ProjectTextRow>
-            <Image
-              raised
-              key={theme}
-              srcSet={
-                isDark
-                  ? `${imageSprStoryboarderDark} 1280w, ${imageSprStoryboarderDarkLarge} 2560w`
-                  : `${imageSprStoryboarderLight} 1280w, ${imageSprStoryboarderLightLarge} 2560w`
-              }
-              width={1280}
-              height={800}
-              placeholder={
-                isDark
-                  ? imageSprStoryboarderDarkPlaceholder
-                  : imageSprStoryboarderLightPlaceholder
-              }
-              alt="A drag and drop storyboard style editor for creating an adaptive lesson."
-              sizes={`(max-width: ${media.mobile}px) 100vw, 80vw`}
-            />
+            
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection>

@@ -18,19 +18,18 @@ import styles from './profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="Hey there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+    I'm Wanling Ma, currently residing in Toronto, Ontario, Canada. 
+    I am pursuing a Bachelor of Information at the University of Toronto.
+    My experience encompasses UI/UX design, problem-solving, and prototyping. 
+    I am proficient in using tools like Figma for prototyping and modern webpage languages to bring those designs to life.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+    In my leisure time, I enjoy playing video games, with a particular fondness for Overwatch, 
+    and staying up-to-date with the latest trends in AI.
+    I'm always keen to explore new projects and ideas, so feel free to reach out to me.
     </Text>
   </Fragment>
 );

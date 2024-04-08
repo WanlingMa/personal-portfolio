@@ -1,15 +1,20 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
+
+import healthNowTextureLarge from '~/assets/healthNow-main.png';
+import healthNowTexture from '~/assets/healthNow-main.png';
+import healthNowTexturePlaceholder from '~/assets/healthNow-main.png';
+
+import wayfoundTextureLarge from '~/assets/wayfound-main.png';
+import wayfoundTexture from '~/assets/wayfound-main.png';
+import wayfoundTexturePlaceholder from '~/assets/wayfound-main.png';
+
+import wayfoundTextureLarge2 from '~/assets/wayfound-main2.png';
+import wayfoundTexture2 from '~/assets/wayfound-main2.png';
+import wayfoundTexturePlaceholder2 from '~/assets/wayfound-main2.png';
+
 import sliceTextureLarge from '~/assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
 import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -103,20 +108,34 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Wayfound - Navigation App of Bissell Building at University of Toronto"
+        description="An AR navigation app that guides users through the Bissell Building with real-time camera-based directional arrows"
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          type: 'phone',
+          alt: 'App login screen',
           textures: [
             {
-              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
-              placeholder: sprTexturePlaceholder,
+              srcSet: `${wayfoundTexture} 375w, ${wayfoundTextureLarge} 750w`,
+              placeholder: wayfoundTexturePlaceholder,
+            },
+            {
+              srcSet: `${wayfoundTexture2} 375w, ${wayfoundTextureLarge2} 750w`,
+              placeholder: wayfoundTexturePlaceholder2,
             },
           ],
         }}
+        // model={{
+        //   type: 'laptop',
+        //   alt: 'Smart Sparrow lesson builder',
+        //   textures: [
+        //     {
+        //       srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
+        //       placeholder: sprTexturePlaceholder,
+        //     },
+        //   ],
+        // }}
       />
       <ProjectSummary
         id="project-2"
@@ -124,21 +143,17 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="HealthNow - Clinic Appointments Management System"
+        description="Designed and prototyped a system for patients to manage appointments with clinics"
+        buttonText="View project"
+        buttonLink="/projects/smart-sparrow"
         model={{
           type: 'phone',
           alt: 'App login screen',
           textures: [
             {
-              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: `${healthNowTexture} 375w, ${healthNowTextureLarge} 750w`,
+              placeholder: healthNowTexturePlaceholder,
             },
           ],
         }}
